@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Comic+Neue:wght@400;700&display=swap');
+
+
+body {
+    /* background-color: rgb(231, 205, 255); */
+    display: flex;
+    align-items: center;
+    font-family: 'Comfortaa', cursive;
+    background-image: url(https://images.hdqwalls.com/wallpapers/the-batman-red-theme-me.jpg);
+    background-size:cover;
+    opacity: 0.9;
+}
+
+
+#moreInfoHeroContainer {
+    height: 100%;
+    margin: 50px !important;
+    margin-top: 100px !important;
+}
+
+/* responsive for mobile */
+@media (max-width: 600px) {
+    #moreInfoHeroContainer {
+        margin: 20px !important;
+        margin-top: 100px !important;
+    }
+}
+ 
+
+
+.card {
+    margin: 0;
+    padding: 0;
+}
+
+/* image */ 
+.heroImg{
+    height: 100%;
+}
+
+
+/* name of hero */
+h1{
+    font-family: 'Comic Neue', cursive;
+    font-weight: 700 !important;
+    text-shadow: 2px 2px 2px #ff0000;
+    display: inline-block;
+
+    border-bottom: 2px solid black;
+}

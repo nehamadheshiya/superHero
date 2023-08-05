@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Comic+Neue:wght@400;700&display=swap');
+
+body {
+  font-family: 'Comfortaa', cursive;
+  color: #00a06d;
+
+}
+
+
+/* homepage banner ------------------ */
+
+#banner {
+  background-image: url(./asset/wide2.png);
+  background-size: cover;
+  background-blend-mode: multiply;
+  margin-top: 80px !important;
+}
+
+#banner h1 {
+  font-family: 'Comic Neue', cursive;
+  font-weight: 700 !important;
+  color: rgb(255, 238, 0);
+  text-shadow: 3px 3px 2px #ff0000;
+}
+
+#banner p {
+  color: rgb(255, 255, 255);
+  font-weight: 700 !important;
+  text-shadow: 1px 1px 3px #ff0000;
+}
+
+/* hero display styles-------------- */
+.singleHeroContainer {
+  padding: 0;
+  margin: 40px !important;
+}
+
+
+
+
+.card-img-top {
+  width: 100%;
+  height: 13rem;
+  /* object-fit:cover; */
+}
+
+.card-body {
+  padding: 10px !important;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: space-between !important;
+}
+
+.card-body h5 {
+  font-size: 18px;
+  font-family: 'Comic Neue', cursive;
+  font-weight: 700 !important;
+}
+
+.btnContainer {
+  display: flex !important;
+  justify-content: space-around !important;
+}
+
+.btnContainer .btn {
+  font-size: 0.65rem !important;
+  font-weight: 700 !important;
+  width: 80px !important;
+  margin-top: 15px !important;
+}
+
+/* hero display in favourite page ----------------- */
+.customTopMargin {
+  margin-top: 90px !important;
+}
+
+/* alert style ------------------------------*/
+#alertBox {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: hsla(163, 100%, 21%, 0.939);
+  color: #ffffff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 10px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+
+/*  toggle to show using js  */
+#alertBox.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+/* media query ------------------------------------- */
+
+
+@media (max-width: 1000px) {
+  .singleHeroContainer {
+    padding: 0;
+    margin: 15px !important;
+  }
+}
+
+@media (max-width: 800px) {
+  .tagline {
+    font-size: 0.9rem !important;
+  }
+
+  .singleHeroContainer {
+    width: 12rem !important;
+    margin: 20px !important;
+  }
+
+}
+
+@media (max-width: 700px) {
+
+  .tagline {
+    font-size: 0.9rem !important;
+  }
+
+  .singleHeroContainer {
+    width: 12rem !important;
+    margin: 10px !important;
+  }
+
+}
+
+@media (max-width: 450px) {
+ 
+  .tagline {
+    font-size: 0.7rem !important;
+  }
+
+  .title {
+    font-size: 2.2rem !important;
+  }
+
+  .singleHeroContainer {
+    width: 12rem !important;
+    /* height: 15rem !important; */
+    margin: 5px !important;
+  }
+
+  .card-img-top {
+    width: 100%;
+    height: 11rem;
+    /* object-fit: cover; */
+  }
+
+  .card-body h5 {
+    font-size: 14px !important;
+  }
+}
+
+@media (max-width: 430px) {
+ 
+  .tagline {
+    font-size: 0.6rem !important;
+  }
+
+  .title {
+    font-size: 1.9rem !important;
+  }
+
+  .singleHeroContainer {
+    width: 11rem !important;
+    /* height: 15rem !important; */
+    margin: 6px !important;
+  }
+
+  .card-img-top {
+    width: 100%;
+    height: 10rem;
+    /* object-fit: cover; */
+  }
+
+  .btnContainer .btn {
+    font-size: 0.45rem !important;
+    font-weight: 700 !important;
+    width: 63px !important;
+    margin-top: 1px !important;
+  }
+
+  .card-body h5 {
+    font-size: 12px !important;
+  }
+}
